@@ -20,7 +20,7 @@ const handleError = (error: unknown, message: string) => {
     throw error;
 }
 
-export const uploadFile = async ({ file, ownerId, accountId, path }: UploadFileProps) => {
+export const uploadFile = async ({ file, ownerId, accountId}: UploadFileProps) => {
     const { databases, storage } = await createAdminClient();
 
     try {

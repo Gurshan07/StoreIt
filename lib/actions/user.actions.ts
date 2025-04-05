@@ -1,9 +1,8 @@
 'use server'
 
-import { Account, ID, Query } from "node-appwrite";
+import { ID, Query } from "node-appwrite";
 import { createAdminClient, createSessionClient } from "../appwrite";
 import { appwriteConfig } from "../appwrite/config";
-import { error } from "console";
 import { parseStringify } from "@/lib/utils";
 import { cookies } from "next/headers";
 import { redirect } from "next/navigation";
