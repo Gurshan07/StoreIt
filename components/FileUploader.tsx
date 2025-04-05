@@ -99,6 +99,8 @@ const FileUploader = ({ ownerId, accountId, className }: Props) => {
                     type={type}
                     extension={extension}
                     url={convertFileToUrl(file)}
+                    imageClassName="default-image-class"
+                    className="default-class"
                   />
 
                   <div className="preview-item-name">
